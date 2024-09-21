@@ -1,0 +1,11 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: iac-Dockerfile
+    container_name: iac_website
+    ports:
+      - "8090:80"
+      - "8091:80"
+    hostname: iac_website
+
